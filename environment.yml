@@ -1,5 +1,6 @@
 name: sim_env
 channels:
+  - conda-forge
   - defaults
 dependencies:
   - bzip2=1.0.8
@@ -115,4 +116,3 @@ dependencies:
       - win32-setctime==1.2.0
       - yappi==1.6.10
       - zipp==3.23.0
-prefix: C:\Users\emers\.conda\envs\sim_env
