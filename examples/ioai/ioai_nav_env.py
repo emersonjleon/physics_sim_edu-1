@@ -84,12 +84,12 @@ class IoaiNavEnv:
         robot_config = RobotConfig(
             prim_path="/World/Galbot",
             name="galbot_one_charlie",
-            mjcf_path=Path()
+            mjcf_path=str(Path()
             .joinpath(self.simulator.synthnova_assets_directory)
             .joinpath("synthnova_assets")
             .joinpath("robot")
             .joinpath("galbot_one_charlie_description")
-            .joinpath("galbot_one_charlie.xml"),
+            .joinpath("galbot_one_charlie.xml")),
             position=[0, 0, 0],
             orientation=[0, 0, 0, 1]
         )

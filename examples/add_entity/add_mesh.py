@@ -45,14 +45,14 @@ def main():
     # Add table
     table_config = MeshConfig(
         prim_path="/World/Table",
-        mjcf_path=Path()
+        mjcf_path=str(Path()
         .joinpath(synthnova_physics_simulator.synthnova_assets_directory)
         .joinpath("synthnova_assets")
         .joinpath("default_assets")
         .joinpath("example")
         .joinpath("ioai")
         .joinpath("table")
-        .joinpath("table.xml"),
+        .joinpath("table.xml")),
         position=[0.65, 0, 0],
         orientation=[0, 0, 0.70711, -0.70711],
         scale=[0.5, 0.7, 0.5]

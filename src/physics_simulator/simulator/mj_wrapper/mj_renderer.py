@@ -38,6 +38,8 @@ if os.environ.get("MUJOCO_GL", None) not in ["osmesa", "glx"]:
     # option for rendering
     if _SYSTEM == "Darwin":
         os.environ["MUJOCO_GL"] = "cgl"
+    elif _SYSTEM == "Windows":
+        os.environ["MUJOCO_GL"] = "wgl"
     else:
         os.environ["MUJOCO_GL"] = "egl"
 _MUJOCO_GL = os.environ.get("MUJOCO_GL", "").lower().strip()

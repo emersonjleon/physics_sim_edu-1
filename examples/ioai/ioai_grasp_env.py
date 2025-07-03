@@ -89,12 +89,12 @@ class IoaiGraspEnv:
         robot_config = RobotConfig(
             prim_path="/World/Galbot",
             name="galbot_one_charlie",
-            mjcf_path=Path()
+            mjcf_path=str(Path()
             .joinpath(self.simulator.synthnova_assets_directory)
             .joinpath("synthnova_assets")
             .joinpath("robot")
             .joinpath("galbot_one_charlie_description")
-            .joinpath("galbot_one_charlie.xml"),
+            .joinpath("galbot_one_charlie.xml")),
             position=[0, 0, 0],
             orientation=[0, 0, 0, 1]
         )
@@ -104,14 +104,14 @@ class IoaiGraspEnv:
         # Add table
         table_config = MeshConfig(
             prim_path="/World/Table",
-            mjcf_path=Path()
+            mjcf_path=str(Path()
             .joinpath(self.simulator.synthnova_assets_directory)
             .joinpath("synthnova_assets")
             .joinpath("default_assets")
             .joinpath("example")
             .joinpath("ioai")
             .joinpath("table")
-            .joinpath("table.xml"),
+            .joinpath("table.xml")),
             position=[0.65, 0, 0],
             orientation=[0, 0, 0.70711, -0.70711],
             scale=[0.5, 0.7, 0.5]
@@ -121,14 +121,14 @@ class IoaiGraspEnv:
         # Add closet
         closet_config = MeshConfig(
             prim_path="/World/Closet",
-            mjcf_path=Path()
+            mjcf_path=str(Path()
             .joinpath(self.simulator.synthnova_assets_directory)
             .joinpath("synthnova_assets")
             .joinpath("default_assets")
             .joinpath("example")
             .joinpath("ioai")
             .joinpath("closet")
-            .joinpath("closet.xml"),
+            .joinpath("closet.xml")),
             position=[0.65, -0.1, 0.55],
             orientation=[0, 0, 0.70711, 0.70711],
             scale=[0.2, 0.2, 0.2]
